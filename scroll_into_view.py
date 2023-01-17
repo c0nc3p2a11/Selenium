@@ -1,11 +1,10 @@
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from math import sin,log
-
+from math import sin, log
 
 browser = webdriver.Chrome()
-res = lambda x: log(abs(12*sin(int(x.text))))
+res = lambda x: log(abs(12 * sin(int(x.text))))
 
 try:
     browser.get('https://suninjuly.github.io/execute_script.html')
